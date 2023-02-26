@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { notification } from '@tauri-apps/api'
+import { notification } from '@tauri-apps/api';
+import Notification from "./components/Notification";
 
 function App() {
   const [title, setTitle] = useState('');
@@ -14,6 +15,7 @@ function App() {
   }
   return (
     <div className="container">
+      <Notification />
        <input
         type="text"
         placeholder="Title"
